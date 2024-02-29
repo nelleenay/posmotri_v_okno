@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -56,7 +56,7 @@ ol {
   justify-content: center;
   align-items: end;
   gap: 30px;
-  width: 1140px;
+  inline-size: 1140px;
 }
 
 .result{
@@ -67,14 +67,14 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  inline-size: 711px;
+  block-size: 386px;
   position: relative;
 }
 
 .result__video {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -83,18 +83,18 @@ ol {
   display: flex;
   align-items: start;
   gap: 40px;
-  width: 711px;
+  inline-size: 711px;
 }
 
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
   border: none;
-  width: 212px;
+  inline-size: 212px;
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
@@ -103,7 +103,7 @@ ol {
 }
 
 .search-form__checkbox-list {
-  width: 212px;
+  inline-size: 212px;
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
@@ -111,7 +111,7 @@ ol {
 }
 
 .search-form__label {
-  width: fit-content;
+  inline-size: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -119,11 +119,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:focus {
-  outline: none;
-}
-
- .search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -137,26 +133,25 @@ ol {
   justify-content: center;
   align-items: center;
   border: 1px solid #fff;
-  width: 19px;
-  height: 19px;
+  inline-size: 19px;
+  block-size: 19px;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: "";
-  width: 15px;
-  height: 15px;
+  inline-size: 15px;
+  block-size: 15px;
   background-color: #fff;
 }
 
 .search-form__textfield {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  color: rgba(255, 255, 255, 0.7);
-  width: 225px;
-  height: 27px;
+  inline-size: 225px;
+  block-size: 27px;
   background-color: transparent;
   border-color: transparent;
   border-top: 1px solid #fff;
@@ -168,23 +163,17 @@ ol {
 	outline: none;
 }
 
-
-
 .content__list {
   display: flex;
   flex-direction: column;
   overflow: auto;
-  width: 399px;
-  height: 298px;
+  inline-size: 399px;
+  block-size: 298px;
   position: relative;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .content__list-item {
-  width: 399px;
+  inline-size: 399px;
   display: flex;
   justify-content: center;
   padding-bottom: 32px;
@@ -200,8 +189,6 @@ ol {
   color: #fff;
   margin: 2px;
 }
-
-
 
 .content__card-link:focus {
 	outline: none;
@@ -223,11 +210,10 @@ ol {
 	background-color: #545050;
 }
 
-
 .content__video-card {
   display: flex;
   justify-content: space-between;
-  width: 394px;
+  inline-size: 394px;
 }
 
 .content__video-card-description-container {
@@ -246,7 +232,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
@@ -258,7 +244,7 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   gap: 22px;
-  width: 399px;
+  inline-size: 399px;
 }
 
 .title {
@@ -273,13 +259,14 @@ ol {
 .button {
   border: 1px solid #fff;
   background-color: transparent;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
   text-align: center;
   color: #fff;
   cursor: pointer;
+  min-height: 34px;
 }
 
 .button:focus {
@@ -301,18 +288,16 @@ ol {
 
 .search-form__submit-button {
   align-self: end;  
-  width: 194px;
-  height: 34px;
+  inline-size: 194px;
 }
 
 .more-button {
-  width: 100%;
-  height: 34px;
+  inline-size: 100%;
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  inline-size: 194px;
+  block-size: 103px;
   object-fit: cover;
 }
 
