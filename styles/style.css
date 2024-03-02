@@ -157,6 +157,7 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   appearance: none;
+  color: #fff;
 }
 
 .search-form__textfield:focus {
@@ -166,7 +167,7 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  overflow: auto;
+  overflow: hidden auto;
   inline-size: 399px;
   block-size: 298px;
   position: relative;
@@ -219,6 +220,10 @@ ol {
 .content__video-card-description-container {
   flex-grow: 1;
   padding-left: 2px;
+  overflow: hidden;
+	text-overflow: ellipsis;
+  white-space: nowrap;
+  max-inline-size: 200px;
 }
 
 .content__video-card-title {
@@ -229,6 +234,9 @@ ol {
   text-align: left;
   text-transform: uppercase;
   padding-bottom: 6px;
+  overflow: hidden;
+	text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
